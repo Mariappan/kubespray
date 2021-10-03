@@ -4,7 +4,7 @@
 # dashboard_enabled: false
 
 # Helm deployment
-helm_enabled: false
+helm_enabled: true
 
 # Registry deployment
 registry_enabled: false
@@ -137,10 +137,10 @@ cert_manager_enabled: false
 # cert_manager_namespace: "cert-manager"
 
 # MetalLB deployment
-metallb_enabled: false
+metallb_enabled: true
 metallb_speaker_enabled: true
-# metallb_ip_range:
-#   - "10.5.0.50-10.5.0.99"
+metallb_ip_range:
+  - "192.168.1.211-192.168.1.215"
 # metallb_speaker_nodeselector:
 #   kubernetes.io/os: "linux"
 # metallb_controller_nodeselector:
